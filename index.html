@@ -1,40 +1,57 @@
-<html>
-<head lang="polish">
-    <meta charset="utf-18">
-    <link type="stylesheet" src="styles.css">
-    <link rel="favicon" href="favicon.ico">
-<body marginwidth="100px">
-<style>
+<!DOCTYPE HTML>
+<html lang = "pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content = "">
+    <title>Tytuł strony</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+<style type = "text/css">
     body {
-        background-color: blackish;
+        background-color: #c0c0c0;
         color: red;
+	margin:0px 100px 0px 100px;
     }
 </style>
+</head>
+<body>
 <header>
-    <img src="hero.png" />
 
-    <h1>Gamification - Level up your Experience</h2>
+    <script>
+         alert('This message is generated using JavaScript.');
+    </script>
+    <noscript>
+    	<p>I am really sorry, but your browser doesn't support javascript code!</p>
+    </noscript>
+
+    <img src="hero.png" alt="hero">
+
+    <h1>Gamification - Level up your Experience</h1>
+
     <nav>
         <ul>
-            <li><a href="#about" title="About">About</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#benefits">Benefits</a></li>
-            <li><a src="examples" title="Examples>Examples</a>
-            <li><a target="blank" hre="https://oskarwegner.pl">About us</a></li>
+            <li><a href="#examples">Examples</a></li>
+            <li><a target="blank" href="https://oskarwegner.pl">About us</a></li>
         </ul>
     </nav>
-</section>
+</header>
+<main>
 
-<section>
-    <div><section><div><p class="hidden"><a href="htts://stranger-things.com"<font face="verdana">I am hiding from you!</a></font></p></div></section></div>
-</section>
+    <div>
+	<!--<font> nie jest obsługiwany w HTML 5 -->
+	<p class="hidden" style ="font-family:Verdana"><a href="https://stranger-things.com">I am hiding from you!</a></p>
+    </div>
 
 <section id="about">
-    <h1>About Gamification</h1>
-    <p style=font-face: verdana, geneva>Gamification is the application of game-design elements and game principles in non-game contexts. It involves using game mechanics, such as points, badges, and leaderboards, to engage users and motivate them to achieve specific goals. Gamification has gained popularity in various fields, including education, marketing, and employee training.
-    <p href="https://gamification.org">Gamification taps into the natural human desire for competition, achievement, and rewards. By incorporating game elements into tasks or processes, it can enhance user engagement, promote learning, and drive desired behaviors.</p>
+    <h2>About Gamification</h2>
+    <p style="font-family: Verdana, Geneva">Gamification is the application of game-design elements and game principles in non-game contexts. It involves using game mechanics, such as points, badges, and leaderboards, to engage users and motivate them to achieve specific goals. Gamification has gained popularity in various fields, including education, marketing, and employee training.</p>
+    <p><a href="https://gamification.org">Gamification taps into the natural human desire for competition, achievement, and rewards. By incorporating game elements into tasks or processes, it can enhance user engagement, promote learning, and drive desired behaviors.</a></p>
 </section>
 
-<section id="examples" id="benefits">
+<section id="benefits">
     <h2>Benefits of Gamification</h2>
     <ul>
         <li>Increased user motivation and engagement</li>
@@ -45,32 +62,35 @@
 </section>
 
 <section id="examples">
-    <h4>Examples of Gamification</h3>
-    <p>Here are some notable examples of gamification:<p>
+    <h2>Examples of Gamification</h2>
+    <p>Here are some notable examples of gamification:</p>
     <ol>
-        <li>Duolingo: A language learning platform that uses game-like features to make learning fun and addictive.</ul>
+        <li>Duolingo: A language learning platform that uses game-like features to make learning fun and addictive.</li>
         <li>Fitness Apps: Many fitness apps incorporate gamification to encourage users to stay active and reach their fitness goals.</li>
         <li>Starbucks Rewards: The Starbucks mobile app rewards customers with stars for purchases, unlocking special offers and free drinks.</li>
-        <li>Badgeville: A gamification platform that helps businesses drive customer and employee engagement through rewards and achievements.</p>
-    </ul>
+        <li>Badgeville: A gamification platform that helps businesses drive customer and employee engagement through rewards and achievements.</li>
+    </ol>
 </section>
 
-<section>
-    <form method="post" href="javascript:void(0)"></form>
+<div>
+    <form method="POST"> 
+    <div>
+    <a href="javascript:void(0)"></a>
 
-    <label>E-mail</label><input type="number">
+    <label>E-mail</label><input type="text">
     <label>How old are you?</label><input type="number">
 
     <button type="button">Save</button>
     <button type="reset">Reset</button>
-</section>
+    </div>
+</form>
+</div>
+</main>
 
 <footer>
     <p>&copy; 2023 Gamification World. All rights reserved.</p>
 </footer>
 
-<noscript>
-    <script>
-        alert('I am really sorry, but your browser doesnt support javascript code!');
-    </script>
-</noscript>
+
+</body>
+</html>
